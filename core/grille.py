@@ -27,7 +27,7 @@ class Grille:
                 directions.append((0, 1))
             if y > self.arrivee[1]:
                 directions.append((0, -1))
-
+            
             dx, dy = random.choice(directions)
             x += dx
             y += dy
