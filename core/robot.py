@@ -1,8 +1,11 @@
-from grille import Grille
+from core.grille import Grille
 class Robot:
-    def __init__(self,grille):
-        self.depart = self.depart
-        self.x,self.y = self.grille
+    def __init__(self, grille):
+        self.grille = grille.grille
+        self.depart = tuple(grille.depart)
+        self.arrivee = tuple(grille.arrivee)
+        self.hauteur = grille.hauteur
+        self.largeur = grille.largeur
 
 def commencer(self):
         file = [self.depart]      # la file pour BFS
