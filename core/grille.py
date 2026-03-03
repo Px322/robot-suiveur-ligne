@@ -13,7 +13,8 @@ class Grille:
             self.grille = [[0 for _ in range(self.largeur)] for _ in range(self.hauteur)]
 
     def creer_chemin(self):
-        x, y = self.depart
+        x = self.depart[0]
+        y = self.depart[1]
         self.grille[x][y] = 1
 
         while [x, y] != self.arrivee:
