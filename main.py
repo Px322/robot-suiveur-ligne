@@ -1,4 +1,3 @@
-
 from core.grille import Grille
 from core.robot import Robot
 
@@ -10,8 +9,8 @@ for ligne in grille1.grille:
     print(" ".join(str(c) for c in ligne))
 
 Paul = Robot(grille1)
-chemin = Paul.commencer()
+
+chemin = Paul.commencer()   # ← on appelle correctement la méthode
 
 print("\nChemin trouvé par le robot :")
 print(chemin)
-
